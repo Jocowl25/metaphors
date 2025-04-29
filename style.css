@@ -1,3 +1,18 @@
-.copilotgoaway{
-    display:none
+body{
+    background: #73bf7d;
+    background: linear-gradient(145deg, rgba(115, 191, 125, 1) 0%, rgba(186, 227, 184, 1) 100%);
+}
+.wrapper{
+    top:0;
+    left:0;
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+}
+.question{
+    color:white;
+    width:50px;
 }
