@@ -2,6 +2,12 @@ body{
     background: #73bf7d;
     background: linear-gradient(145deg, rgba(115, 191, 125, 1) 0%, rgba(186, 227, 184, 1) 100%);
 }
+h1{
+    background-image: linear-gradient(145deg, rgb(83, 179, 96) 0%, rgb(131, 225, 126) 100%);
+    color:transparent;
+    background-clip: text;
+    font-size:200px;
+}
 .wrapper{
     top:0;
     left:0;
@@ -17,5 +23,31 @@ body{
     width:50px;
 }
 img{
-    width:100px;
+    --width:120px;
+    width:var(--width);
+    position:absolute;
+}
+.melon{
+    object-fit: contain;
+    width:calc(var(--width) + 70px);
+}
+.cow{
+    object-fit: contain;
+    width:calc(var(--width) + 20px);
+}
+.elephant{
+    object-fit: contain;
+    width:calc(var(--width) + 10px);
+}
+.purse{
+    width:calc(var(--width) - 40px);
+}
+.means{
+    width:calc(var(--width) - 20px);
+}
+.apple{
+    width:calc(var(--width) - 20px);
+}
+.train{
+    width:calc(var(--width) - 20px);
 }
