@@ -1,5 +1,6 @@
 let images=document.querySelectorAll('img')
 let difference=0
+let main=true
 requestAnimationFrame(reset)
 function reset(){
     const angle=0.628319
@@ -9,5 +10,7 @@ function reset(){
         img.style.left=Math.cos(angle*(i+difference))*r+((window.innerWidth/2)-(img.width/4)-25)+"px"
     })
     difference+=0.005
+    if(main){
     requestAnimationFrame(reset)
+    }
 }
