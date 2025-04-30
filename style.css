@@ -33,6 +33,10 @@ h1{
     width:var(--width);
     position:absolute;
     user-select: none;
+    opacity:100;
+}
+.image:hover{
+    opacity:0;
 }
 .cow{
     object-fit: contain;

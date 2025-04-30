@@ -26,7 +26,6 @@ images.forEach((img,i)=>{
     })
     img.addEventListener("mouseover",()=>{
         hover=i
-        img.style.opacity=0;
         fetus.style.display="block"
         fetus.style.maskImage=`url(${img.src})`
         fetus.style.maskSize=img.width+"px"
@@ -35,7 +34,6 @@ images.forEach((img,i)=>{
     })
     img.addEventListener("mouseout",()=>{
         fetus.style.display="none"
-        img.style.opacity=100;
     })
 })
 
