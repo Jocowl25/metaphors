@@ -27,10 +27,6 @@ img{
     width:var(--width);
     position:absolute;
 }
-.melon{
-    object-fit: contain;
-    width:calc(var(--width) + 70px);
-}
 .cow{
     object-fit: contain;
     width:calc(var(--width) + 20px);
