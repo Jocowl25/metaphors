@@ -39,7 +39,7 @@ images.forEach((img,i)=>{
         gradient.style.opacity=100;
         gradient.style.maskSize=img.width+"px"
         gradient.style.maskImage=`url(${img.src})`
-        gradient.style.maskPosition=`${img.getBoundingClientRect().left}px ${img.getBoundingClientRect().top}px`
+        gradient.style.maskPosition=`${img.getBoundingClientRect().left}px ${img.getBoundingClientRect().top+10}px`
         gradient.style.maskRepeat="no-repeat"
         }
     })
