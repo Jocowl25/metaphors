@@ -21,6 +21,8 @@ h1{
 }
 .question{
     width:120px;
+    user-select: none;
+    cursor:pointer;
 }
 .fetus{
     position:relative;
@@ -34,6 +36,7 @@ h1{
     position:absolute;
     user-select: none;
     opacity:100;
+    cursor:pointer;
 }
 .image:hover{
     opacity:0;
