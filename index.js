@@ -98,7 +98,7 @@ question.addEventListener("mouseover",()=>{
         gradient.style.opacity=100;
         gradient.style.maskSize=question.width+"px"
         gradient.style.maskImage=`url(${question.src})`
-       gradient.style.maskPosition=`${question.getBoundingClientRect().left}px ${question.getBoundingClientRect().top}px`
+       gradient.style.maskPosition=`${question.getBoundingClientRect().left}px ${question.getBoundingClientRect().top+10}px`
         gradient.style.maskRepeat="no-repeat"
     }
 })
@@ -125,7 +125,7 @@ question.addEventListener("click",()=>{
         gradient.style.opacity=100;
         gradient.style.maskSize=question.width+"px"
         gradient.style.maskImage=`url(${question.src})`
-       gradient.style.maskPosition=`${question.getBoundingClientRect().left}px ${question.getBoundingClientRect().top}px`
+       gradient.style.maskPosition=`${question.getBoundingClientRect().left}px ${question.getBoundingClientRect().top+10}px`
         gradient.style.maskRepeat="no-repeat"
     }else{
         question.style.width=120+"px"
