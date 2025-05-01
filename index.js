@@ -53,6 +53,9 @@ images.forEach((img,i)=>{
         gradient.style.opacity=0
         gradient.style.maskImage=``
         if(main){
+        img.setAttribute("style", `--width: 180px`);
+        fetus.style.display="none"
+        img.style.opacity=100
         main=false;
         question.style.display="none"
         images.forEach((imge)=>imge.style.display="none")
@@ -60,9 +63,12 @@ images.forEach((img,i)=>{
         para[i].style.display="block"
         img.style.position="static";
         img.style.filter="invert(100%)";
-        document.body.style.background="url('fetus.png') top/cover no-repeat"
+        document.body.style.background="url('fetus.png') top/cover no-repeat black"
         document.body.querySelector('h1').style.display="none"
         }else{
+            img.setAttribute("style", `--width: 150px`);
+            gradient.style.opacity=0
+            img.style.opacity=100
             document.body.querySelector('h1').style.display="block"
             document.body.style.background="linear-gradient(145deg, rgba(115, 191, 125, 1) 0%, rgba(186, 227, 184, 1) 100%)"
             main=true;
@@ -106,11 +112,12 @@ question.addEventListener("click",()=>{
     gradient.style.opacity=0
     gradient.style.maskImage=``
     if(main){
+    question.style.width=140+"px"
     main=false;
     images.forEach((imge)=>imge.style.display="none")
     para[i].style.display="block"
     question.style.filter="invert(100%)";
-    document.body.style.background="url('fetus.png') top/cover no-repeat"
+    document.body.style.background="url('fetus.png') top/cover no-repeat black"
     document.body.querySelector('h1').style.display="none"
     fetus.style.display="none"
     question.style.opacity=0
@@ -120,6 +127,7 @@ question.addEventListener("click",()=>{
        gradient.style.maskPosition=`${question.getBoundingClientRect().left}px ${question.getBoundingClientRect().top}px`
         gradient.style.maskRepeat="no-repeat"
     }else{
+        question.style.width=120+"px"
         document.body.querySelector('h1').style.display="block"
         document.body.style.background="linear-gradient(145deg, rgba(115, 191, 125, 1) 0%, rgba(186, 227, 184, 1) 100%)"
         main=true;
