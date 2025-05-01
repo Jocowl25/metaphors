@@ -43,6 +43,7 @@ p{
     display:none;
     width:100vw;
     height:100vh;
+    background-color:"black"
 }
 .image{
     --width:150px;
