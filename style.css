@@ -1,6 +1,9 @@
 body{
     background: #73bf7d;
     background: linear-gradient(145deg, rgba(115, 191, 125, 1) 0%, rgba(186, 227, 184, 1) 100%);
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
 }
 .gradient{
     user-select:none;

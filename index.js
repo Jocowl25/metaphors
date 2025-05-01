@@ -63,7 +63,8 @@ images.forEach((img,i)=>{
         para[i].style.display="block"
         img.style.position="static";
         img.style.filter="invert(100%)";
-        document.body.style.background="url('fetus.png') top/cover no-repeat black"
+        document.body.style.background="url('fetus.png') center/cover no-repeat black"
+        document.body.style.backgroundColor="black"
         document.body.querySelector('h1').style.display="none"
         }else{
             img.setAttribute("style", `--width: 150px`);
