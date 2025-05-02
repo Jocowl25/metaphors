@@ -24,7 +24,7 @@ h1{
     z-index:-100;
 }
 p{
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
     font-family:sans-serif;
     display:none;
     color:white;
