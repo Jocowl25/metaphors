@@ -23,9 +23,6 @@ function reset(){
     }
 }
 images.forEach((img,i)=>{
-    img.addEventListener("click",()=>{
-        ///wdertyui
-    })
     img.addEventListener("mouseover",()=>{
         img.style.opacity=0
         if(main){
